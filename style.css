@@ -1,5 +1,6 @@
 body {
   background-color: oldlace;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -14,4 +15,18 @@ body {
 
 h2 {
   text-align: center;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
