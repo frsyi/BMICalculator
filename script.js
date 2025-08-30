@@ -1,4 +1,6 @@
-function hitungBMI(weight, height) {
+document.getElementById("bmiForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
   const bmi = weight / (height / 100) ** 2;
   let category = "";
 
@@ -11,11 +13,4 @@ function hitungBMI(weight, height) {
   } else {
     category = "Obesity";
   }
-
-  return {
-    bmi: bmi.toFixed(2),
-    category: category,
-  };
-}
-
-console.log(hitungBMI(50, 160));
+});
