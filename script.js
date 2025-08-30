@@ -3,6 +3,15 @@ document.getElementById("bmiForm").addEventListener("submit", function (event) {
 
   const weight = parseFloat(document.getElementById("weight").value);
   const height = parseFloat(document.getElementById("height").value);
+  const errorMsg = document.getElementById("errorMsg");
+
+  if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+    errorMsg.innerText = "Mohon masukkan berat dan tinggi badan yang valid!";
+    errorMsg.style.display = "block";
+    return;
+  } else {
+    errorMsg.style.display = "none";
+  }
 
   const bmi = weight / (height / 100) ** 2;
   let category = "";

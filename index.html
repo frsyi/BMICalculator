@@ -19,6 +19,7 @@
           name="weight"
           id="weight"
           placeholder="Enter your weight here"
+          min="1"
           autofocus
           required
         />
@@ -28,8 +29,10 @@
           name="height"
           id="height"
           placeholder="Enter your height here"
+          min="1"
           required
         />
+        <p id="errorMsg" class="errorMsg" style="display: none"></p>
         <button type="submit">Calculate BMI</button>
       </form>
       <div class="result" id="resultBox" style="display: none">
@@ -38,7 +41,6 @@
         <p class="comment">You are <span id="category"></span></p>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
