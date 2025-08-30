@@ -17,8 +17,7 @@ document.getElementById("bmiForm").addEventListener("submit", function (event) {
     category = "Obesity";
   }
 
-  document.getElementById("result").innerHTML = `
-    BMI Anda: <span>${bmi.toFixed(1)}</span> <br>
-    Kategori: <span>${category}</span>
-  `;
+  document.getElementById("result").innerText = bmi.toFixed(1);
+  document.getElementById("category").innerText = category;
+  document.getElementById("resultBox").style.display = "block";
 });
