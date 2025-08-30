@@ -6,7 +6,7 @@ document.getElementById("bmiForm").addEventListener("submit", function (event) {
   const errorMsg = document.getElementById("errorMsg");
 
   if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
-    errorMsg.innerText = "Mohon masukkan berat dan tinggi badan yang valid!";
+    errorMsg.innerText = "Please enter valid weight and height!";
     errorMsg.style.display = "block";
     return;
   } else {
